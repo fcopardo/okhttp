@@ -249,7 +249,7 @@ subprojects { project ->
       maven(MavenPublication) {
         groupId = project.group
         artifactId = project.ext.artifactId
-        version = '4.9.1.1-EN-SNAPSHOT'
+        version = '4.9.1.2-EN-SNAPSHOT'
         if (bom) {
           from components.javaPlatform
         } else {
