@@ -249,7 +249,7 @@ subprojects { project ->
       maven(MavenPublication) {
         groupId = project.group
         artifactId = project.ext.artifactId
-        version = '4.9.1.2-EN-SNAPSHOT'
+        version = '4.9.1.2-EN'
         if (bom) {
           from components.javaPlatform
         } else {
@@ -292,7 +292,7 @@ subprojects { project ->
   }
 
   signing {
-    sign publishing.publications.maven
+    //sign publishing.publications.maven
   }
 }
 
